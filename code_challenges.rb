@@ -28,10 +28,17 @@ end
 album1 = 'Rubber Soul'
 # Expected output: 'Rbbr Sl'
 
+album1.delete "a,e,i,o,u"
+
 album2 = 'Sgt Pepper'
 # Expected output: 'Sgt Pppr'
+
+album2.delete "a,e,i,o,u"
+
 album3 = 'Abbey Road'
 # Expected output: 'bby Rd'
+
+album3.delete "a,e,i,o,u"
 
 
 
@@ -43,3 +50,11 @@ is_palindrome2 = 'LEARN'
 # Expected output: 'LEARN is not a palindrome'
 is_palindrome3 = 'Rotator'
 # Expected output: 'Rotator is a palindrome'
+
+def palindrome?(string)
+    if string.downcase == string.downcase.reverse
+        return "#{string} is a palindrome"
+    else
+        p "#{string} is NOT a palindrome"
+    end
+end
