@@ -38,7 +38,7 @@ album2.delete "a,e,i,o,u"
 album3 = 'Abbey Road'
 # Expected output: 'bby Rd'
 
-album3.delete "a,e,i,o,u"
+album3.delete "aeiouAEIOU"
 
 
 
