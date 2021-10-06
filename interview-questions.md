@@ -34,7 +34,7 @@ When a user presses a key[2]
   Your answer: Object-oriented programming is a way of writing code in which objects are used to contain data for ease of calling pieces of data repeatedly. It's different from functional programming in that object oriented is only using objects and functional programming could be using any type of data storage options.
 
   Researched answer:
-Object-oriented programming (OOP) is a computer programming model that organizes software design around data, or objects, rather than functions and logic. An object can be defined as a data field that has unique attributes and behavior. Functional programming is more of functions and logic.
+Object-oriented programming is a  model that uses software design based on data, or objects. Functional programming is a model that uses functions and logic.
 
 
 4. What is the difference between a Float and an Integer in Ruby?
