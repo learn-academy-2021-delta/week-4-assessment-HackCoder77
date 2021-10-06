@@ -5,10 +5,21 @@
 
 num1 = 7
 # Expected output: '7 is odd'
+if num1 % 2 === 1
+p "#{num1} is odd"
+end
+
 num2 = 42
 # Expected output: '42 is even'
+if num2 % 2 === 0
+    p"#{num2} is even"
+end
+
 num3 = 221
 # Expected output: '221 is odd'
+if num3 % 2 === 1
+    p "#{num3} is odd"
+end
 
 
 
@@ -16,10 +27,18 @@ num3 = 221
 
 album1 = 'Rubber Soul'
 # Expected output: 'Rbbr Sl'
+
+album1.delete "a,e,i,o,u"
+
 album2 = 'Sgt Pepper'
 # Expected output: 'Sgt Pppr'
+
+album2.delete "a,e,i,o,u"
+
 album3 = 'Abbey Road'
 # Expected output: 'bby Rd'
+
+album3.delete "aeiouAEIOU"
 
 
 
@@ -31,3 +50,11 @@ is_palindrome2 = 'LEARN'
 # Expected output: 'LEARN is not a palindrome'
 is_palindrome3 = 'Rotator'
 # Expected output: 'Rotator is a palindrome'
+
+def palindrome?(string)
+    if string.downcase == string.downcase.reverse
+        return "#{string} is a palindrome"
+    else
+        p "#{string} is NOT a palindrome"
+    end
+end
